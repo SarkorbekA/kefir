@@ -26,3 +26,11 @@ console.log('Developed by Sarkor');
 //     body.classList.remove('active')
 //     filter.classList.remove('active')
 // })
+
+
+const langBtn = document.querySelector('.header__lang-title');
+const langList = document.querySelector('.header__lang-list');
+
+langBtn.addEventListener('click', () => {
+    langList.classList.toggle('active');
+})
