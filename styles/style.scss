@@ -70,7 +70,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    min-width: 330px;
+    min-width: 345px;
 }
 
 body.active {
@@ -1230,6 +1230,9 @@ body.active {
         @media (max-width: 768px) {
             font-size: 50px;
         }
+        @media (max-width: 576px) {
+            font-size: 36px;
+        }
     }
     .article {
         margin-top: 100px;
@@ -1278,6 +1281,10 @@ body.active {
                 @media (max-width: 768px) {
                     font-size: 20px;
                     line-height: 220%;
+                }
+                @media (max-width: 576px) {
+                    font-size: 18px;
+                    line-height: 210%;
                 }
             }
         }
@@ -1341,6 +1348,10 @@ body.active {
                 @media (max-width: 768px) {
                     font-size: 48px;
                     line-height: 110%;
+                }
+                @media (max-width: 576px) {
+                    font-size: 40px;
+                    line-height: 120%;
                 }
             }
             &-leaves {
@@ -1468,6 +1479,9 @@ body.active {
         @media (max-width: 768px) {
             font-size: 50px;
             margin-bottom: 40px;
+        }
+        @media (max-width: 576px) {
+            font-size: 38px;
         }
     }
     &-wrapper {
