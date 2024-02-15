@@ -669,7 +669,7 @@ body.active {
         margin-top: 30px;
         left: -100%;
         top: 40%;
-        transform: translateY(0) translateX(-300px);
+        transform: translateY(-50%) translateX(-300px);
         transition: all 1.3s ease;
         opacity: 0;
         animation-fill-mode: forwards;
@@ -700,6 +700,7 @@ body.active {
             &.left {
                 top: 0;
                 position: relative;
+                transform: translateY(0) translateX(-300px);
                 animation-name: reveal-box-sm;
                 margin-top: 45px;
                 min-width: auto;
@@ -1209,6 +1210,9 @@ body.active {
     @media (max-width: 1200px) {
         margin-top: 75px;
     }
+    @media (max-width: 768px) {
+        margin-top: 50px;
+    }
     &-title {
         background: linear-gradient(20.96deg, rgb(131, 148, 93), rgb(153, 228, 11));
         -webkit-background-clip: text;
@@ -1223,6 +1227,9 @@ body.active {
         @media (max-width: 1100px) {
             font-size: 72px;
         }
+        @media (max-width: 768px) {
+            font-size: 50px;
+        }
     }
     .article {
         margin-top: 100px;
@@ -1231,6 +1238,10 @@ body.active {
         align-items: center;
         @media (max-width: 1100px) {
             margin-top: 60px;
+        }
+        @media (max-width: 992px) {
+            flex-direction: column-reverse;
+            gap: 25px;
         }
         &__text {
             padding-right: 60px;
@@ -1241,6 +1252,13 @@ body.active {
             transform: translateY(-20px);
             @media (max-width: 1100px) {
                 padding-right: 35px;
+            }
+            @media (max-width: 992px) {
+                width: 100%;
+                justify-content: center;
+                background: var(--white);
+                position: relative;
+                z-index: 2;
             }
             &-title {
                 color: var(--black);
@@ -1254,6 +1272,13 @@ body.active {
                     line-height: 230%;
                     font-size: 22px;
                 }
+                @media (max-width: 992px) {
+                    max-width: 800px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 20px;
+                    line-height: 220%;
+                }
             }
         }
         &__box {
@@ -1266,6 +1291,9 @@ body.active {
                 top: 0;
                 right: 0;
                 background-color: var(--white);
+                @media (max-width: 768px) {
+                    height: 40px;
+                }
             }
             &::before {
                 position: absolute;
@@ -1275,6 +1303,9 @@ body.active {
                 bottom: 0;
                 left: 0;
                 background-color: var(--white);
+                @media (max-width: 768px) {
+                    height: 45px;
+                }
             }
             width: 50%;
             height: 500px;
@@ -1286,6 +1317,10 @@ body.active {
             box-shadow: inset 0px 4px 50px 0px rgba(0, 0, 0, 0.35);
             background: linear-gradient(210.75deg, rgb(131, 148, 93) 34.37%, rgb(153, 228, 11) 148.321%);
 
+            @media (max-width: 992px) {
+                width: 100%;
+                height: 400px;
+            }
             &-text {
                 color: var(--white);
                 font-family: Akzidenz;
@@ -1302,6 +1337,10 @@ body.active {
                 @media (max-width: 1100px) {
                     font-size: 60px;
                     line-height: 100%;
+                }
+                @media (max-width: 768px) {
+                    font-size: 48px;
+                    line-height: 110%;
                 }
             }
             &-leaves {
@@ -1328,14 +1367,23 @@ body.active {
         flex-direction: column;
         gap: 5px;
         align-items: center;
+        position: relative;
+        z-index: 4;
         @media (max-width: 1200px) {
             top: -20px;
+        }
+        @media (max-width: 992px) {
+            top: 0;
         }
         &__box {
             width: 100%;
             display: flex;
             gap: 5px;
             flex-wrap: wrap;
+            justify-content: flex-end;
+            @media (max-width: 850px) {
+                justify-content: space-around;
+            }
             &-img {
                 width: calc(100% / 4 - 5px * 0.75);
                 height: 330px;
@@ -1344,6 +1392,23 @@ body.active {
                 }
                 @media (max-width: 1100px) {
                     height: 280px;
+                }
+                @media (max-width: 992px) {
+                    height: 250px;
+                }
+                @media (max-width: 850px) {
+                    width: calc(100% / 3 - 5px * 0.75);
+                }
+                @media (max-width: 768px) {
+                    height: 220px;
+                }
+                @media (max-width: 576px) {
+                    width: calc(100% / 2 - 5px);
+                }
+                @media (max-width: 450px) {
+                    width: 100%;
+                    max-width: 330px;
+                    height: 300px;
                 }
                 img {
                     width: 100%;
@@ -1356,6 +1421,9 @@ body.active {
                 transform: scale(1.7) translateY(-35px);
                 @media (max-width: 1200px) {
                     transform: scale(1.7) translateY(-25px);
+                }
+                @media (max-width: 850px) {
+                    transform: scale(1.7) translateY(-15px);
                 }
             }
         }
@@ -1372,6 +1440,9 @@ body.active {
         gap: 100px;
         @media (max-width: 1300px) {
             gap: 50px;
+        }
+        @media (max-width: 576px) {
+            gap: 0;
         }
     }
     &-title {
@@ -1394,14 +1465,32 @@ body.active {
             font-size: 72px;
             margin-bottom: 60px;
         }
+        @media (max-width: 768px) {
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
     }
     &-wrapper {
         border-top: 1px solid rgba(130, 148, 93, 0.35);
         padding: 100px 0;
+        @media (max-width: 992px) {
+            padding: 100px 0 50px;
+        }
+        @media (max-width: 576px) {
+            padding: 70px 0 30px;
+        }
     }
     &__box {
         display: flex;
         align-items: flex-start;
+        @media (max-width: 992px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            &.second {
+                flex-direction: column-reverse;
+            }
+        }
         &-img {
             box-shadow: inset 0px 4px 50px 0px rgba(0, 0, 0, 0.35);
             background: linear-gradient(210.75deg, rgb(131, 148, 93) 34.37%, rgb(153, 228, 11) 148.321%);
@@ -1410,6 +1499,9 @@ body.active {
             position: relative;
             @media (max-width: 1300px) {
                 height: 450px;
+            }
+            @media (max-width: 992px) {
+                width: 100%;
             }
             &::after {
                 position: absolute;
@@ -1446,10 +1538,16 @@ body.active {
             width: 50%;
             display: flex;
             justify-content: center;
+            @media (max-width: 992px) {
+                width: 100%;
+            }
         }
         &-inner {
             width: 100%;
             max-width: 665px;
+            @media (max-width: 992px) {
+                max-width: 800px;
+            }
         }
         &-subtitle {
             font-family: Akzidenz;
@@ -1462,6 +1560,9 @@ body.active {
             text-stroke: 2px #83945d00;
             @media (max-width: 1300px) {
                 font-size: 72px;
+            }
+            @media (max-width: 576px) {
+                font-size: 54px;
             }
         }
         &-title {
@@ -1478,6 +1579,10 @@ body.active {
             @media (max-width: 1300px) {
                 font-size: 100px;
             }
+            @media (max-width: 576px) {
+                font-size: 72px;
+                line-height: 120%;
+            }
         }
         &-line {
             margin: 40px 0;
@@ -1487,6 +1592,9 @@ body.active {
             opacity: 0.35;
             @media (max-width: 1300px) {
                 margin: 30px 0;
+            }
+            @media (max-width: 576px) {
+                margin: 20px 0;
             }
         }
         &-text {
@@ -1500,6 +1608,14 @@ body.active {
             @media (max-width: 1300px) {
                 font-size: 22px;
                 line-height: 210%;
+            }
+            @media (max-width: 992px) {
+                text-align: center;
+            }
+            @media (max-width: 576px) {
+                font-size: 18px;
+                line-height: 210%;
+                text-align: left;
             }
         }
     }
