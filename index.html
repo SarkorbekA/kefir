@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <!-- <div class="filter"></div> -->
 
     <main class="main">
         <div class="main-left"></div>
@@ -27,46 +26,64 @@
         </div>
 
 
-        <header class="header">
+        <header id="main" class="header">
+            <div class="filter"></div>
             <div class="container">
                 <div class="header-wrapper">
                     <div class="header__left">
                         <div class="header__logo">
-                            <a href="#" class="header__logo-link">
+                            <!-- <a href="#" class="header__logo-link">
                                 <img src="./images/png/burger.png" alt="burger image">
-                            </a>
+                            </a> -->
+                            <div class="header__lang">
+                                <h4 class="header__lang-title">
+                                    UZ
+                                </h4>
+                                <div class="header__lang-list">
+                                    <a href="#" class="header__lang-item">RU</a>
+                                    <a href="#" class="header__lang-item">EN</a>
+                                </div>
+                            </div>
                         </div>
                         <nav class="nav desktop">
                             <ul class="nav__list">
                                 <li class="nav__list-item">
-                                    <a href="#" class="nav__list-link">Главная</a>
+                                    <a href="#main" class="nav__list-link">Главная</a>
                                 </li>
                                 <li class="nav__list-item">
-                                    <a href="#" class="nav__list-link">О компании</a>
+                                    <a href="#about" class="nav__list-link">О компании</a>
                                 </li>
                                 <li class="nav__list-item">
-                                    <a href="#" class="nav__list-link">Перейти в каталог</a>
+                                    <a href="#catalog" class="nav__list-link">Перейти в каталог</a>
                                 </li>
                                 <li class="nav__list-item">
-                                    <a href="#" class="nav__list-link">Контакты</a>
+                                    <a href="#contacts" class="nav__list-link">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
+                    <div class="nav__open">
+                        <div class="nav__open-btn">
+                            <div class="btn-elem"></div>
+                        </div>
+                    </div>
                     <div class="header__right">
+                        <div class="nav__exit">
+                            <div class="nav__exit-btn"></div>
+                        </div>
                         <nav class="nav phone">
                             <ul class="nav__list">
                                 <li class="nav__list-item">
-                                    <a href="#" class="nav__list-link">Главная</a>
+                                    <a href="#main" class="nav__list-link nav__list-phone">Главная</a>
                                 </li>
                                 <li class="nav__list-item">
-                                    <a href="#" class="nav__list-link">О компании</a>
+                                    <a href="#about" class="nav__list-link nav__list-phone">О компании</a>
                                 </li>
                                 <li class="nav__list-item">
-                                    <a href="#" class="nav__list-link">Перейти в каталог</a>
+                                    <a href="#catalog" class="nav__list-link nav__list-phone">Перейти в каталог</a>
                                 </li>
                                 <li class="nav__list-item">
-                                    <a href="#" class="nav__list-link">Контакты</a>
+                                    <a href="#contacts" class="nav__list-link nav__list-phone">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -79,15 +96,6 @@
                                     +998 90 914-67-08
                                 </a>
                                 <div class="header__contact-box">
-                                    <div class="header__lang">
-                                        <h4 class="header__lang-title">
-                                            UZ
-                                        </h4>
-                                        <div class="header__lang-list">
-                                            <a href="#" class="header__lang-item">RU</a>
-                                            <a href="#" class="header__lang-item">EN</a>
-                                        </div>
-                                    </div>
                                     <a href="#" class="header__social">
                                         <img src="./images/svg/tg.svg" alt="telegram icon">
                                     </a>
@@ -95,11 +103,6 @@
                             </div>
                         </div>
 
-                    </div>
-                    <div class="nav__open">
-                        <div class="nav__open-btn">
-                            <div class="btn-elem"></div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -251,13 +254,13 @@
         </div>
     </main>
 
-    <section class="about">
+    <section id="about" class="about">
         <h2 class="about-title"> О КОМПАНИИ</h2>
 
         <div class="container">
             <div class="article">
                 <div class="article__text">
-                    <p class="article__text-title">
+                    <p class="article__text-title reveal-left">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the
                         industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the
@@ -270,7 +273,7 @@
                     <div class="article__box-leaves">
                         <img draggable="false" src="./images/png/leaves.png" alt="leaves">
                     </div>
-                    <h3 class="article__box-text">
+                    <h3 class="article__box-text reveal-right">
                         10+ ЛЕТ
                         <span>НА РЫНКЕ</span>
                     </h3>
@@ -278,16 +281,16 @@
             </div>
             <div class="gallery">
                 <div class="gallery__box">
-                    <div class="gallery__box-img">
+                    <div class="card gallery__box-img">
                         <img src="./images/about1.jpeg" alt="gallery image">
                     </div>
-                    <div class="gallery__box-img">
+                    <div class="card gallery__box-img">
                         <img src="./images/about2.jpeg" alt="gallery image">
                     </div>
-                    <div class="gallery__box-img">
+                    <div class="card gallery__box-img">
                         <img src="./images/about3.jpeg" alt="gallery image">
                     </div>
-                    <div class="gallery__box-img">
+                    <div class="card gallery__box-img">
                         <img draggable="false" class="gallery__box-product" src="./images/png/product.png"
                             alt="product">
                     </div>
@@ -295,13 +298,13 @@
                 <div class="gallery__box">
                     <!-- <div class="gallery__box-img">
                     </div> -->
-                    <div class="gallery__box-img">
+                    <div class="card gallery__box-img">
                         <img src="./images/about4.jpeg" alt="gallery image">
                     </div>
-                    <div class="gallery__box-img">
+                    <div class="card gallery__box-img">
                         <img src="./images/about5.jpeg" alt="gallery image">
                     </div>
-                    <div class="gallery__box-img">
+                    <div class="card gallery__box-img">
                         <img src="./images/about6.jpeg" alt="gallery image">
                     </div>
                 </div>
@@ -310,7 +313,7 @@
     </section>
 
 
-    <section class="catalog">
+    <section id="catalog" class="catalog">
         <h2 class="catalog-title">
             КАТАЛОГ
             <span>ПРОДУКЦИИ</span>
@@ -320,18 +323,20 @@
                 <div class="container">
                     <div class="catalog__box">
                         <div class="catalog__box-img">
-                            <img draggable="false" src="./images/png/products.png" alt="products">
+                            <div class="catalog__box-block reveal-left">
+                                <img draggable="false" src="./images/png/products.png" alt="products">
+                            </div>
                         </div>
                         <div class="catalog__box-article">
                             <div class="catalog__box-inner">
-                                <h3 class="catalog__box-subtitle">
+                                <h3 class="catalog__box-subtitle reveal-right">
                                     BEST
                                 </h3>
-                                <h2 class="catalog__box-title">
+                                <h2 class="catalog__box-title reveal-right">
                                     КЕФИР
                                 </h2>
                                 <div class="catalog__box-line"></div>
-                                <p class="catalog__box-text">
+                                <p class="catalog__box-text reveal-right">
                                     Состав продукта: пастеризованное молоко, сливки, сухое молоко, закваска,
                                     пастеризованное
                                     молоко, сливки, сухое молоко, закваска, пастеризованное молоко
@@ -346,14 +351,14 @@
                     <div class="catalog__box second">
                         <div class="catalog__box-article">
                             <div class="catalog__box-inner">
-                                <h3 class="catalog__box-subtitle">
+                                <h3 class="catalog__box-subtitle reveal-left">
                                     BEST
                                 </h3>
-                                <h2 class="catalog__box-title">
+                                <h2 class="catalog__box-title reveal-left">
                                     КЕФИР
                                 </h2>
                                 <div class="catalog__box-line"></div>
-                                <p class="catalog__box-text">
+                                <p class="catalog__box-text reveal-left">
                                     Состав продукта: пастеризованное молоко, сливки, сухое молоко, закваска,
                                     пастеризованное
                                     молоко, сливки, сухое молоко, закваска, пастеризованное молоко
@@ -361,7 +366,9 @@
                             </div>
                         </div>
                         <div class="catalog__box-img">
-                            <img draggable="false" src="./images/png/products.png" alt="products">
+                            <div class="catalog__box-block reveal-right">
+                                <img draggable="false" src="./images/png/products.png" alt="products">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -372,6 +379,8 @@
     </section>
 
 
+    <script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
 
