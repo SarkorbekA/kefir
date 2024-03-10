@@ -47,6 +47,14 @@ langBtn.addEventListener('click', () => {
 })
 
 
+const langFooterBtn = document.querySelector('.footer__lang-title');
+const langFooterList = document.querySelector('.footer__lang-list');
+
+langFooterBtn.addEventListener('click', () => {
+    langFooterList.classList.toggle('active');
+})
+
+
 var options = {
     rootMargin: '120px',
     threshold: [0, .25, .50, .75, 1]
