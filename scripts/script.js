@@ -109,9 +109,7 @@ document.querySelectorAll('.reveal-right').forEach(el => {
 var swiperCategory = new Swiper(".mySwiper3", {
     slidesPerView: 2,
     mousewheel: true,
-    // spaceBetween: 20,
     loop: true,
-    freeMode: true,
     autoplay: {
         delay: 3500,
         disableOnInteraction: false,
@@ -119,7 +117,6 @@ var swiperCategory = new Swiper(".mySwiper3", {
     breakpoints: {
         769: {
             slidesPerView: 4,
-            // spaceBetween: 30,
         },
         481: {
             slidesPerView: 3,
