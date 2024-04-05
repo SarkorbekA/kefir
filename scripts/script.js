@@ -104,9 +104,25 @@ document.querySelectorAll('.reveal-right').forEach(el => {
     observerSecond.observe(el);
 })
 
-// document.querySelectorAll('.reveal-top').forEach(el => {
-//     observer.observe(el);
-// })
-// document.querySelectorAll('.reveal-bottom').forEach(el => {
-//     observer.observe(el);
-// })
+
+
+var swiperCategory = new Swiper(".mySwiper3", {
+    slidesPerView: 2,
+    mousewheel: true,
+    // spaceBetween: 20,
+    loop: true,
+    freeMode: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        769: {
+            slidesPerView: 4,
+            // spaceBetween: 30,
+        },
+        481: {
+            slidesPerView: 3,
+        }
+    },
+});
